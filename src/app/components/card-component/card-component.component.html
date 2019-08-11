@@ -1,0 +1,27 @@
+<div >
+    <div class="row" *ngFor="let cardList of rowCradList">
+        
+                    <div class="col-xs-12 col-sm-4" *ngFor="let card of cardList">
+                            <div class="card">
+                                <a class="img-card" href="{{card.Link}}">
+                                <img src="{{card.ImgPath}}" />
+                            </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="{{card.Link}}"> {{card.Titel}}
+                                    </a>
+                                    </h4>
+                                    <p class="">
+                                        {{card.Beschreibung}}
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="{{card.Link}}" class="btn btn-link btn-block">
+                                        Erfahre mehr
+                                    </a>
+                                </div>
+                            </div>
+                        </div>         
+    </div> 
+   
+</div>   
